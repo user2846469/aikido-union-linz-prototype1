@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/aikido-union-linz-prototype1/static/css/main.e6c13ad2.css",
-    "main.js": "/aikido-union-linz-prototype1/static/js/main.843161b5.js",
+    "main.css": "/aikido-union-linz-prototype1/static/css/main.605a9766.css",
+    "main.js": "/aikido-union-linz-prototype1/static/js/main.f04d60f2.js",
     "static/js/737.3542118f.chunk.js": "/aikido-union-linz-prototype1/static/js/737.3542118f.chunk.js",
+    "static/media/aikido_picture1.jpg": "/aikido-union-linz-prototype1/static/media/aikido_picture1.766741170efec1b8e3e6.jpg",
+    "static/media/aikido_clipart2.jpg": "/aikido-union-linz-prototype1/static/media/aikido_clipart2.4e0d4a753197f5667b03.jpg",
     "index.html": "/aikido-union-linz-prototype1/index.html",
-    "main.e6c13ad2.css.map": "/aikido-union-linz-prototype1/static/css/main.e6c13ad2.css.map",
-    "main.843161b5.js.map": "/aikido-union-linz-prototype1/static/js/main.843161b5.js.map",
+    "main.605a9766.css.map": "/aikido-union-linz-prototype1/static/css/main.605a9766.css.map",
+    "main.f04d60f2.js.map": "/aikido-union-linz-prototype1/static/js/main.f04d60f2.js.map",
     "737.3542118f.chunk.js.map": "/aikido-union-linz-prototype1/static/js/737.3542118f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.843161b5.js"
+    "static/css/main.605a9766.css",
+    "static/js/main.f04d60f2.js"
   ]
 }
