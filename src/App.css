@@ -1,1 +1,12 @@
+:root {
+    /* empty */
+}
 
+.headline {
+    color: brown;
+}
+
+.page-container {
+    background: no-repeat url('images/aikido_clipart2.jpg');
+    background-position-x: right;
+}
