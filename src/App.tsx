@@ -1,7 +1,11 @@
 import React from 'react';
 
 import logo from './images/logo-aikido-union-linz.jpg';
-import  picture1 from './images/aikido_picture1.jpg'
+import picture1 from './images/aikido_picture1.jpg'
+import picture2 from './images/aikido_picture2.jpg'
+import picture3 from './images/aikido_picture3.jpg'
+import aikikaiLogo from './images/aikikai_logo1.png'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import './App.css';
 import Container from '@mui/material/Container';
@@ -19,9 +23,12 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Article, AssuredWorkload } from '@mui/icons-material';
+import { Carousel } from 'react-responsive-carousel';
 
 const theme = createTheme({
+  typography: {
 
+  }
 });
 
 function App() {
@@ -30,65 +37,97 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container className='page-container'>
         <AppBar position="static" color="transparent">
-            <Toolbar color="palette.primary.light">
-              <Button color="inherit">
-                <Box
-                  component="img"
-                  alt="Logo"
-                  src={logo}
-                  maxHeight={56}
-                  maxWidth={56}
-                />
-              </Button>
-              <Typography variant="h5" noWrap className='headline' component="div" sx={{ flexGrow: 1, alignSelf: 'center' }}>
-    
-                Aikido Union Linz
-              </Typography>
-              <IconButton
-                size="large"
-                edge="end"
-                color="inherit"
-                aria-label="menu"
-              >
-                <MenuIcon />
-              </IconButton>
-            </Toolbar>
-        </AppBar>
-        <Container>
-          <Grid2 container columns={12} spacing={2}>
-            <Grid2 size={12}>
+          <Toolbar color="palette.primary.light">
+            <Button color="inherit">
               <Box
-                marginTop={4}
-                marginBottom={2}
-                maxWidth={'60%'}
                 component="img"
-                alt="Aikido Bild"
-                src={picture1}
+                alt="Logo"
+                src={logo}
+                maxHeight={56}
+                maxWidth={56}
               />
-              <Box sx={{ flexGrow: 1 }}>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1, alignSelf: 'left' }}>
-                  Wir trainieren Aikido
-                </Typography>
-                <ul>
-                  <li><Link>Was ist Aikido?</Link></li>
-                  <li><Link>Glossar</Link></li>
-                </ul>
-                <Typography variant="body1" component="div" sx={{ flexGrow: 1, alignSelf: 'left' }}>
-                </Typography>
-              </Box>
+            </Button>
+            <Typography
+              variant="h5"
+              noWrap
+              className='headline'
+              component="div"
+              sx={{ flexGrow: 1, alignSelf: 'center' }}>
+              Aikido Union Linz
+            </Typography>
+            <IconButton
+              size="large"
+              edge="end"
+              color="inherit"
+              aria-label="menu"
+            >
+              <MenuIcon />
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+        <Container disableGutters>
+          <Grid2 container columns={12} spacing={1}>
+            <Grid2 size={8}>
+              <Box marginTop={2}>
+                <Carousel
+                  showStatus={false}
+                  autoPlay={true}
+                  emulateTouch={true}
+                  infiniteLoop={true}
+                  showArrows={false}
+                  swipeable={true}>
+                  <Box
+                    component="img"
+                    alt="Aikido Bild 1"
+                    src={picture1}
+                  />
 
+                  <Box
+                    component="img"
+                    alt="Aikido Bild 2"
+                    src={picture2}
+                  />
+
+                  <Box
+                    component="img"
+                    alt="Aikido Bild 3"
+                    src={picture3}
+                  />
+                </Carousel>
+              </Box>
             </Grid2>
             <Grid2 size={12}>
-              <Box sx={{ flexGrow: 1 }}>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1, alignSelf: 'left' }}>
-                  Training
-                </Typography>
-                <ul>
-                  <li><Link>Erstes Training</Link></li>
-                  <li><Link>Erwachsene</Link></li>
-                  <li><Link>Kinder</Link></li>
-                  <li><Link>Etikette</Link></li>
-                </ul></Box>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1, alignSelf: 'left' }}>
+                Aikido authentisch
+              </Typography>
+            </Grid2>
+            <Grid2 size={12}>
+              <ul>
+                <li><Link>Was ist Aikido?</Link></li>
+
+              </ul>
+            </Grid2>
+            <Grid2 size={12} className="training-heading">
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1, alignSelf: 'left' }}>
+                Training
+              </Typography>
+            </Grid2>
+            <Grid2 size={8} className="training-body">
+              <ul>
+                <li><Link>Erwachsene</Link></li>
+                <li><Link>Kinder</Link></li>
+                <li><Link>Etikette</Link></li>
+                <li><Link>Glossar</Link></li>
+              </ul>
+            </Grid2>
+            <Grid2 size={4} textAlign={'end'} className="aikikai-logo">
+              <Box
+                width={'100px'}
+                height={'100px'}
+                component="img"
+                alt="Aikikai Logo"
+                src={aikikaiLogo}
+              />
             </Grid2>
             <Grid2 size={12}>
               <Box sx={{ flexGrow: 1 }}>
@@ -96,7 +135,7 @@ function App() {
                   Über uns
                 </Typography>
                 <ul>
-                  <li><Link>Kurze Geschichte der A.U.L. mit Erweiterung A.B. Wels, A. Walding</Link></li>
+                  <li><Link>Geschichte der Aikido Union Linz</Link></li>
                   <li><Link>Trainer und Vorstand</Link></li>
                   <li><Link>Mitgliedschaft</Link></li>
                   <li><Link>Kontakt</Link></li>
