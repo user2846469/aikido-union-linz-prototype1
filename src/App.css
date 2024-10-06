@@ -4,10 +4,20 @@
 
 .headline {
     color: brown;
-    font-family: 'Helvetica';
 }
 
-.page-container {
-    background: no-repeat url('images/aikido_clipart2.jpg');
-    background-position-x: right;
+.aikido-text, .aikikai-logo {
+    animation: 3s 1 normal slidein;
 }
+
+@keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }

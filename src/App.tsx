@@ -1,10 +1,11 @@
 import React from 'react';
 
 import logo from './images/logo-aikido-union-linz.jpg';
-import picture1 from './images/aikido_picture1.jpg'
-import picture2 from './images/aikido_picture2.jpg'
-import picture3 from './images/aikido_picture3.jpg'
-import aikikaiLogo from './images/aikikai_logo1.png'
+import picture1 from './images/aikido_picture1.jpg';
+import picture2 from './images/aikido_picture2.jpg';
+import picture3 from './images/aikido_picture3.jpg';
+import aikikaiLogo from './images/aikikai_logo1.png';
+import aikidoText from './images/aikido_clipart2.jpg';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import './App.css';
@@ -81,13 +82,11 @@ function App() {
                     alt="Aikido Bild 1"
                     src={picture1}
                   />
-
                   <Box
                     component="img"
                     alt="Aikido Bild 2"
                     src={picture2}
                   />
-
                   <Box
                     component="img"
                     alt="Aikido Bild 3"
@@ -95,6 +94,13 @@ function App() {
                   />
                 </Carousel>
               </Box>
+            </Grid2>
+            <Grid2 size={4} textAlign={'end'} className="aikido-text">
+              <Box marginTop={2}
+                component="img"
+                alt="Aikdo text"
+                src={aikidoText}
+              />
             </Grid2>
             <Grid2 size={12}>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1, alignSelf: 'left' }}>
