@@ -94,15 +94,7 @@ function App() {
                   />
                 </Carousel>
               </Box>
-            </Grid2>
-            <Grid2 size={4} textAlign={'end'} className="aikido-text">
-              <Box marginTop={2}
-                component="img"
-                alt="Aikdo text"
-                src={aikidoText}
-              />
-            </Grid2>
-            <Grid2 size={12}>
+              <Grid2 size={12}>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1, alignSelf: 'left' }}>
                 Aikido authentisch
               </Typography>
@@ -113,6 +105,15 @@ function App() {
 
               </ul>
             </Grid2>
+            </Grid2>
+            <Grid2 size={4} textAlign={'end'} className="aikido-text">
+              <Box marginTop={2}
+                component="img"
+                alt="Aikdo text"
+                src={aikidoText}
+              />
+            </Grid2>
+
             <Grid2 size={12} className="training-heading">
               <Typography variant="h6" component="div" sx={{ flexGrow: 1, alignSelf: 'left' }}>
                 Training
